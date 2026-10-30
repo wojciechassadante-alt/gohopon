@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="gohopon">
+  <rect width="64" height="64" rx="14" fill="#000b6a" />
+  <rect x="14" y="16" width="34" height="7" rx="3.5" fill="#ffffff" opacity="0.95" />
+  <rect x="14" y="29" width="23" height="7" rx="3.5" fill="#ffffff" opacity="0.68" />
+  <rect x="14" y="42" width="13" height="7" rx="3.5" fill="#ffffff" opacity="0.42" />
+  <circle cx="47" cy="45.5" r="7" fill="#ff7a30" />
+</svg>
