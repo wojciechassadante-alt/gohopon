@@ -58,7 +58,7 @@ export default function WaitlistForm() {
     <div className="mx-auto w-full max-w-xl">
       <form
         onSubmit={handleSubmit}
-        className="flex items-center gap-2 rounded-full border border-white/70 bg-white/65 p-1.5 pl-5 shadow-[0_20px_45px_-28px_rgba(0,11,106,0.6)] backdrop-blur-md"
+        className="flex items-center gap-2 rounded-full border border-line bg-white p-1.5 pl-5 shadow-[0_20px_45px_-28px_rgba(0,11,106,0.6)]"
       >
         <label htmlFor="hero-email" className="sr-only">
           Adres e-mail

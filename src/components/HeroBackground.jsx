@@ -1,19 +1,19 @@
 import backgroundSvg from '../assets/background.svg'
 
 /**
- * Tło hero: ilustracja wektorowa z `src/assets` (pociąg w górach) rozciągnięta na całą sekcję.
- * `object-cover` + `object-center` kadrują ją tak, żeby środek kadru — pociąg na tle gór — był
- * widoczny także na telefonie (wtedy drzewa i skały po bokach są obcinane).
+ * Tło hero: ilustracja wektorowa z `src/assets` (pociąg na stacji w mieście) rozciągnięta na
+ * sekcję. `object-cover` kadruje ją bez zniekształceń — domyślnie `object-center`, żeby środek
+ * kadru z pociągiem został widoczny także na wąskim ekranie; `Hero.jsx` przełącza od `lg` na
+ * `object-right`, bo lewą połowę ilustracji zasłaniają wtedy białe schodki.
  *
- * SVG (3929,97 × 2245,47; proporcja 1,75:1, ~90 kB) skaluje się bez utraty jakości, więc jest
- * lżejszy i ostrzejszy niż zdjęcie, które zastąpił. Poprzednie tło (`hero-alps-panorama.jpg`)
- * zostaje w `src/assets` na wypadek powrotu do wersji fotograficznej — wtedy wystarczy zmienić
- * import na pierwszej linii.
+ * SVG (3435,72 × 2245,47; proporcja 1,53:1, ~520 kB) skaluje się bez utraty jakości, więc jest
+ * ostrzejszy niż zdjęcie, które zastąpił. Poprzednie materiały (`hero-alps-panorama.jpg`,
+ * „Panorama Alp widziana z pociągu.png”) zostają w `src/assets` na wypadek powrotu do wersji
+ * fotograficznej — wtedy wystarczy zmienić import na pierwszej linii.
  *
- * Uwaga o kadrze: górna część ilustracji to jasne niebo, środek i dół to ciemne góry, las oraz
- * pociąg, a pod szynami jest biały pas. Treść hero leży na środku (ciemne góry i pociąg),
- * dlatego w `Hero.jsx` siedzi na białej, rozmytej płycie — inaczej ciemny `ink` nie miałby
- * kontrastu na tym kadrze.
+ * Uwaga o kadrze: ilustracja ma przezroczysty margines (~7% z każdej strony), więc jej treść
+ * nie dochodzi do krawędzi sekcji. Schodkom w `Hero.jsx` to nie przeszkadza — białe prostokąty
+ * leżą na obrazie, a przezroczysty margines i tak pokazuje biel sekcji.
  */
 export default function HeroBackground({ className = '' }) {
   return (
